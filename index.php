@@ -15,7 +15,9 @@
 <body>
     <h1>PHP</h1>
     <h3>
-        <?php echo $stringa; ?>
+        <?php echo $stringa; ?> <br>
+        Lunghezza stringa:
+        <?php echo strlen($stringa); ?>
     </h3>
 </body>
 </html>
