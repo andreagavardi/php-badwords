@@ -1,6 +1,6 @@
 <?php
-    $nome = "pippo";
-    var_dump($nome)
+    $stringa = " ciao, oggi c'è il sole, perchè oggi non piove ma c'è il sole, siccome oggi c'è il sole vuol dire che non piove";
+    var_dump($stringa)
 ?>
 
 
@@ -13,7 +13,10 @@
     <title>PHP-BADWORDS</title>
 </head>
 <body>
-    <h1>php</h1>
+    <h1>PHP</h1>
+    <h3>
+        <?php echo $stringa; ?>
+    </h3>
 </body>
 </html>
 
