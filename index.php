@@ -1,6 +1,10 @@
 <?php
     $stringa = " ciao, oggi c'è il sole, perchè oggi non piove ma c'è il sole, siccome oggi c'è il sole vuol dire che non piove";
-    var_dump($stringa)
+    //var_dump($stringa);
+    $parola = $_GET["parola"];
+    
+    $stringa_sostituita = str_replace($parola, "***", $stringa);
+    //var_dump($stringa_sostituita);
 ?>
 
 
@@ -14,11 +18,16 @@
 </head>
 <body>
     <h1>PHP</h1>
-    <h3>
+    <p>
         <?php echo $stringa; ?> <br>
         Lunghezza stringa:
         <?php echo strlen($stringa); ?>
-    </h3>
+    </p>
+    <p>
+         <?php echo $stringa_sostituita; ?> <br>
+        Lunghezza nuova stringa:
+        <?php echo strlen($stringa_sostituita); ?>
+    </p>
 </body>
 </html>
 
